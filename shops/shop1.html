@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5b0b13">
+  <title>Jewellery Rate</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <link rel="apple-touch-icon" href="../icons/icon-192.png">
+</head>
+<body data-shop-name="Royal Rathna Jewellers" data-location="Madurai, Tamil Nadu" data-tagline="Pure. Transparent. Trusted." data-logo="royal-rathna.png" data-phone="+91 98765 43210">
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="logo" href="../index.html" aria-label="Shop directory">
+        <img class="shop-logo" data-shop-logo src="" alt="Jewellery shop logo">
+        <span>
+          <span class="logo-name" data-shop-name>Jewellers</span>
+          <span class="logo-sub">JEWELLERS</span>
+        </span>
+      </a>
+      <button class="menu" aria-label="Menu">☰</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <button class="install-pwa" data-install-pwa hidden>Install App</button>
+        <p class="eyebrow">TODAY'S MARKET UPDATE</p>
+        <h1><span>Gold</span> & Silver Rate</h1>
+        <div class="ornament">◆ ─── ◇ ─── ◆</div>
+        <p class="tagline" data-tagline>Pure. Transparent. Trusted.</p>
+      </section>
+
+      <section class="updated">
+        <div class="updated-left">
+          <div class="calendar">▣</div>
+          <div>
+            <div class="updated-label">UPDATED TODAY</div>
+            <div class="updated-date" data-updated-date>18 August 2026</div>
+            <div class="updated-time" data-updated-time>08:30 AM</div>
+          </div>
+        </div>
+        <div class="live"><span class="live-dot"></span>LIVE<br>RATES</div>
+      </section>
+
+      <div class="rates-grid">
+        <section class="section">
+          <div class="section-heading">
+            <div class="section-icon">◆</div>
+            <div class="section-title">Gold</div>
+            <div class="rule"></div>
+          </div>
+          <div id="gold-rates"></div>
+        </section>
+
+        <section class="section silver">
+          <div class="section-heading">
+            <div class="section-icon">◇</div>
+            <div class="section-title">Silver</div>
+            <div class="rule"></div>
+          </div>
+          <div id="silver-rates"></div>
+        </section>
+      </div>
+
+      <section class="notify" aria-label="Notifications preview">
+        <div class="bell">♧</div>
+        <div>
+          <h3>Never miss a rate update!</h3>
+          <p>Notifications will be added in the next phase.</p>
+        </div>
+      </section>
+
+      <section class="actions">
+        <a class="action" href="#store">
+          <span class="action-icon">⌂</span>
+          <strong>Visit Store</strong>
+          <small>Explore our collection</small>
+        </a>
+        <a class="action" data-phone href="#">
+          <span class="action-icon">☎</span>
+          <strong>Contact Us</strong>
+          <small>Call the store</small>
+        </a>
+        <a class="action" href="#location">
+          <span class="action-icon">●</span>
+          <strong>Location</strong>
+          <small data-address>Find us easily</small>
+        </a>
+      </section>
+
+      <nav class="bottom-nav">
+        <a class="nav-item active" href="#"><span class="nav-icon">⌂</span>Home</a>
+        <a class="nav-item" href="#history"><span class="nav-icon">↗</span>Rates History</a>
+        <a class="nav-item" href="#about"><span class="nav-icon">♙</span>About Us</a>
+        <a class="nav-item" href="#more"><span class="nav-icon">•••</span>More</a>
+      </nav>
+    </main>
+
+    <footer class="footer">
+      <strong data-shop-name>Jewellers</strong>
+      <p>Trusted jewellery rates for your daily purchase decisions.<br>
+      <span data-location>Madurai, Tamil Nadu</span></p>
+      <p>© 2026 <span data-shop-name>Jewellers</span>. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="../js/rates.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/pwa.js"></script>
+</body>
+</html>
