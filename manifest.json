@@ -1,0 +1,28 @@
+{
+  "name": "Jewellery Gold & Silver Rates",
+  "short_name": "Jewellery Rates",
+  "description": "Daily gold and silver rates for jewellery shops.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone"
+  ],
+  "background_color": "#fffdf8",
+  "theme_color": "#5b0b13",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

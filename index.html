@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5b0b13">
+  <title>Jewellery Rate Test — 5 Shops</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+<body class="directory-page">
+  <main class="directory">
+    <div class="brand-mark">◆</div>
+    <p class="eyebrow">GOLD & SILVER RATE TEST</p>
+    <h1>Jewellery Shops</h1>
+    <p class="intro">Select a shop to preview its live rate page.</p>
+    <button class="install-pwa" data-install-pwa hidden>Install App</button>
+    <div id="shop-list" class="shop-list"></div>
+  </main>
+  <script src="js/rates.js"></script>
+  <script>
+    const shops = [
+      ["shop1", "Royal Rathna Jewellers", "Madurai, Tamil Nadu"],
+      ["shop2", "Varsha Jewellers", "Usilampatti, Tamil Nadu"],
+      ["shop3", "Sri Shankar Jewellers", "T. Kallupatti, Tamil Nadu"],
+      ["shop4", "Kaveri Jewellers", "Peraiyur, Tamil Nadu"],
+      ["shop5", "Meenakshi Jewellers", "Elumalai, Tamil Nadu"]
+    ];
+    const list = document.getElementById("shop-list");
+    shops.forEach(([id, name, location]) => {
+      const a = document.createElement("a");
+      a.className = "shop-link";
+      a.href = `shops/${id}.html`;
+      a.innerHTML = `<span><strong>${name}</strong><small>${location}</small></span><span class="arrow">→</span>`;
+      list.appendChild(a);
+    });
+  </script>
+<script src="js/pwa.js"></script>
+</body>
+</html>
